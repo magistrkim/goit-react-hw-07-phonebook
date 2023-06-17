@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import css from './contact-list.module.css';
 
 const ContactList = ({ contacts, removeContact }) => {
-  const contactItems = contacts.map(({ id, name, number }) => (
+  const contactItems = contacts.map(({ id, name, phone }) => (
     <li key={id} className={css.item}>
-      {name}: {number}
+      {name}: {phone}
       <button
         onClick={() => {
           removeContact(id);
@@ -30,7 +30,7 @@ ContactList.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
     })
   ).isRequired,
   removeContact: PropTypes.func.isRequired,

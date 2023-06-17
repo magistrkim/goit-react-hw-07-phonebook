@@ -10,10 +10,14 @@
 }
 .list {
     display: grid;
-    gap: 10px;
+    gap: 16px;
 }
 .item {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+}
+.item:hover,
+.item:focus {
+    color: rgb(246, 111, 1);
+    cursor: pointer;
 }
