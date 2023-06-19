@@ -43,8 +43,6 @@ const ContactForm = ({ onSubmit }) => {
           For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
         />
-      </div>
-      <div className={css.block}>
         <label className={css.label} htmlFor="">
           Number
         </label>
@@ -60,10 +58,10 @@ const ContactForm = ({ onSubmit }) => {
           parentheses and can start with +"
           required
         />
+        <button type="submit" className={css.btn}>
+          Add contact
+        </button>
       </div>
-      <button type="submit" className={css.btn}>
-        Add contact
-      </button>
     </form>
   );
 };

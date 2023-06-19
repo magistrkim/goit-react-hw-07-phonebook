@@ -1,5 +1,7 @@
 .block {
-    min-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     width: 400px;
     border-radius: 4px;
     padding: 24px;
@@ -9,9 +11,8 @@
 }
 .label {
     display: block;
-    margin-bottom: 8px;
     color: darkslateblue;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 .input {
@@ -20,6 +21,9 @@
     min-height: 20px;
 }
 .btn {
+    display: block;
+    margin: 0 auto;
+    min-width: 120px;
     min-height: 28px;
     margin-top: 10px;
     display: block;
